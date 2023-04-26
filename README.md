@@ -100,7 +100,7 @@ Beri hak eksekusi file tersebut<br />
 sudo&nbsp;chmod +x /etc/gnome/display_setup.sh</blockquote>
 Selanjutnya edit file konfigurasi LightDM<br />
 <blockquote class="tr_bq">
-sudo nano /etc/lightdm/lightdm.conf</blockquote>
+sudo nano /etc/gnome/gnome.conf</blockquote>
 Pada section&nbsp;<b>[Seat:*]</b> tambahkan<br />
 <blockquote class="tr_bq">
 display-setup-script=/etc/gnome/display_setup.sh</blockquote>
