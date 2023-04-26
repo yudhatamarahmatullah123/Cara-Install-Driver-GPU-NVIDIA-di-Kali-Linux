@@ -87,9 +87,9 @@ EndSection
 <br />
 Sesuaikan sendiri BUS ID nya dengan output di langkah sebelumnya.<br />
 <br />
-Seperti yang saya tulis diawal, disini saya menggunakan Kali Linux dengan desktop XFCE yang menggunakan display manager LightDM. Sekarang buat file di direktori lightdm untuk mengeksekusi setup script.<br />
+Seperti yang saya tulis diawal, disini saya menggunakan Kali Linux dengan desktop GNOME yang menggunakan display manager GNOME. Sekarang buat file di direktori lightdm untuk mengeksekusi setup script.<br />
 <blockquote class="tr_bq">
-sudo nano /etc/lightdm/display_setup.sh</blockquote>
+sudo nano /etc/gnome/display_setup.sh</blockquote>
 Isinya<br />
 <blockquote class="tr_bq">
 #!/bin/sh<br />
@@ -97,13 +97,13 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0<br />
 xrandr --auto</blockquote>
 Beri hak eksekusi file tersebut<br />
 <blockquote class="tr_bq">
-sudo&nbsp;chmod +x /etc/lightdm/display_setup.sh</blockquote>
+sudo&nbsp;chmod +x /etc/gnome/display_setup.sh</blockquote>
 Selanjutnya edit file konfigurasi LightDM<br />
 <blockquote class="tr_bq">
 sudo nano /etc/lightdm/lightdm.conf</blockquote>
 Pada section&nbsp;<b>[Seat:*]</b> tambahkan<br />
 <blockquote class="tr_bq">
-display-setup-script=/etc/lightdm/display_setup.sh</blockquote>
+display-setup-script=/etc/gnome/display_setup.sh</blockquote>
 Lihat screenshot berikut<br />
 <div class="separator" style="clear: both; text-align: center;">
 <a href="https://1.bp.blogspot.com/-j7ijLeXuQ4Q/XiCR6pq9dgI/AAAAAAAAL6Y/ZrMg1hkWokIoxXXejAdMfzVBavlFbalbQCLcBGAsYHQ/s1600/setup%2Bscript.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="173" data-original-width="733" height="150" src="https://1.bp.blogspot.com/-j7ijLeXuQ4Q/XiCR6pq9dgI/AAAAAAAAL6Y/ZrMg1hkWokIoxXXejAdMfzVBavlFbalbQCLcBGAsYHQ/s640/setup%2Bscript.png" width="640" /></a></div>
