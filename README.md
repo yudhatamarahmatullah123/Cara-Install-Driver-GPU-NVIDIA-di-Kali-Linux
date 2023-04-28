@@ -8,12 +8,12 @@ Sebelumnya saya harus beritahu kalian bahwa tutorial yang ada di web Kali Linux 
 <br />
 Sebagai referensi tambahan, saya memasang Kali Linux di laptop MSI. Spesifikasi lengkapnya:<br />
 <ul>
-<li>OS: Kali Linux 2019.4</li>
-<li>Desktop: XFCE</li>
+<li>OS: Kali GNU/Linux Rolling 2023.1</li>
+<li>Desktop: GNOME</li>
 <li>Kernel:&nbsp;5.3.0-kali2-amd64</li>
-<li>CPU: Intel i7-7700HQ (8) @ 3.800GHz</li>
-<li>GPU: NVIDIA GeForce GTX 1060 Mobile</li>
-<li>GPU: Intel HD Graphics 630</li>
+<li>CPU: 11th Gen Intel i5-11400</li>
+<li>GPU: NVIDIA GeForce RTX 3050 Mobile</li>
+<li>GPU: Intel TigerLake-H GT1</li>
 </ul>
 <span style="font-size: large;"><b><u>Persiapan Instalasi</u></b></span><br />
 Di beberapa kasus termasuk yang saya alami, driver open source bawaan yakni nouveau memberikan masalah yang cukup serius dimana sering tiba-tiba restart saat menjalankan perintah lspci. Solusinya, block modul tersebut agar tidak diload saat booting, dan jangan lupa restart setelah nouveau di block.<br />
